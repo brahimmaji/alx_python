@@ -8,8 +8,8 @@ print("Last digit of" ,number, "is" ,thelastnumber .format(number,thelastnumber)
 if int(thelastnumber) > 5 : 
     print("Last digit of" ,number, "is" ,thelastnumber ,"and is grater than 5".format(number,thelastnumber))
 
-if int(thelastnumber) == 0 :
+elif int(thelastnumber) == 0 :
     print("Last digit of" ,number, "is" ,thelastnumber ,"and is 0 ".format(number,thelastnumber))
 
-if int(thelastnumber) < 6 and int(thelastnumber)!= 0 :
+elif int(thelastnumber) < 6 and int(thelastnumber)!= 0 :
     print("Last digit of" ,number, "is" ,thelastnumber ," and is less than 6 and not 0 ".format(number,thelastnumber))
