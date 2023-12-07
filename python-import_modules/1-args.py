@@ -1,7 +1,15 @@
+from sys import argv
+
+def print_arguments():
+    num_args = len(argv) - 1  # Subtracting 1 to exclude the script name
+
+    if num_args == 0:
+        print("Number of argument(s): 0.")
+    else:
+        print(f"Number of argument(s): {num_args}, {'argument' if num_args == 1 else 'arguments'}:")
+
+        for i in range(1, len(argv)):
+            print(f"{i}: {argv[i]}")
+
 if __name__ == "__main__":
-
-    from args_1 import print_arguments
-
-    result = print_arguments()
-    if result:
-        print(result)
+    print_arguments()
