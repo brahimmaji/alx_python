@@ -1,6 +1,3 @@
-# Write a program that prints all possible different combinations of two digits.
-x=input("enter the first digit : ")
-y=input("enter the second digit : ")
-A= str(x,y)
-B= str(y,x)
-print("possible different combinations of two digitis : ", A ,"and " ,B)
+for i in range(10):
+    for j in range( i + 1,10 ):
+        print("{:02}".format(i * 10 + j), end=", " if (i != 8 or j != 9) else "\n")
