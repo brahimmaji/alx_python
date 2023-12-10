@@ -6,4 +6,3 @@ def no_c(my_string):
     return result
 
 
-print(no_c("char"))
