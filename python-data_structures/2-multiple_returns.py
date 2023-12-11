@@ -10,4 +10,3 @@ def multiple_returns(sentence):
 
 #    return sentence
 
-print(multiple_returns("Holberton"))
