@@ -1,10 +1,12 @@
 def multiple_returns(sentence):
-    length=len(sentence)
-    first=sentence[0:1]
-    if sentence == "" :
-        first= None
-        print("Length: {:d} - First character: {}".format(length, first))
-    else :
-        print("Length: {:d} - First character: {} ".format(length,first))   
+    length = len(sentence)
+    first = None if length == 0 else sentence[0]
+    return length, first
+#def multiple_returns(sentence):
+  #  length=len(sentence)
+ #   first = None if length == 0 else sentence[0]
+#    print("Length: {:d} - First character: {}".format(length, first))
+
+#    return sentence
 
 print(multiple_returns(""))
