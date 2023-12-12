@@ -3,11 +3,12 @@
 #def square_matrix_simple(matrix=[]):
 #matrix is a 2 dimensional array
 def square_matrix_simple(matrix=[]):
-    matrix=[]
+    result=[]
     for x in matrix:
+        square_row = []
         square_row =[ y**2 for y in x]
         matrix.append(square_row)
-    return matrix
+    return result
 
 
 square_matrix_simple = __import__('0-square_matrix_simple').square_matrix_simple
