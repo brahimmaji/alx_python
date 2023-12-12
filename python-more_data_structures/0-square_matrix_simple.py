@@ -1,10 +1,15 @@
-#Write a function that computes the square value of all integers of a matrix.
 def square_matrix_simple(matrix=[]):
-    matrix=[[]]
-    for x in matrix :
-        for y in x :
-            new_matrix = y**y
-            matrix=new_matrix.append()
-    return new_matrix
-matrix=[1,2,3]
+    result = [[]]
+    for row in matrix:
+          
+        for elem in row:
+            squared_row = [elem ** 2]
+            result.append(squared_row)
+    return result
+
+#matrix
+matrix = [
+    []
+]
 print(square_matrix_simple(matrix))
+print(matrix)
