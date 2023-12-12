@@ -8,8 +8,6 @@ def square_matrix_simple(matrix=[]):
     return result
 
 #matrix
-matrix = [
-    []
-]
+matrix = [[]]
 print(square_matrix_simple(matrix))
 print(matrix)
